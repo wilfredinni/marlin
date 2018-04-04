@@ -569,3 +569,9 @@ paket-files/
 # End of https://www.gitignore.io/api/osx,macos,linux,python,windows,pycharm,sublimetext,visualstudio
 .vscode/launch.json
 .vscode/settings.json
+Pipfile
+Pipfile.lock
+marlin/tests.py
+marlin/fullscreen_test.py
+marlin/status_bar_test.py
+marlin/test.py

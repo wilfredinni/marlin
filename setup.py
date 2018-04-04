@@ -1,8 +1,15 @@
 # -*- coding: utf-8 -*-
 from setuptools import setup, find_packages
+import os
+
+if os.name == 'posix':
+    pass
+else:
+    marlin = os.path.join(
+        os.path.dirname(__file__), 'marlin', 'scripts', 'marlin.bat')
 
 
-with open('README.rst') as f:
+with open('README.md') as f:
     readme = f.read()
 
 
@@ -19,9 +26,11 @@ setup(
     include_package_data=True,
     install_requires=['click'],
     python_requires='>=3',
+    scripts=[marlin],
     entry_points={
         'console_scripts': [
-            'marlin = marlin.marlin:main',
+            'bookmark = marlin.bookmark:main',
+            'rmark = marlin.rmark:main',
         ]
     },
     classifiers=[
