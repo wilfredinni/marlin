@@ -1,41 +1,43 @@
 from marlin.manage import ManageBookmark
-from marlin.huepy import info, good, yellow
-from marlin.marlin_batch_maker import make_batch
+from marlin.styles import label, color
 from pathlib import Path
 import click
-# import os
-
-# labels and long msgs
-info = info('')
-bookmark_exist = 'alredy exist. Do you want to overwrite it?'
 
 
 @click.command()
-@click.argument('name')
-@click.argument('path', default=Path.cwd())
-def main(name, path):
+@click.argument('bookmark_name')
+@click.argument('bookmark_path', default=Path.cwd())
+def main(bookmark_name, bookmark_path):
     """
     Bookmark the current folder.
     """
-    # create the bookmark instance
-    bookmark_object = ManageBookmark(ManageBookmark.bookmark_path)
-    # load all the bookmarks saved in bookmarks.json
-    all_bookmarks = bookmark_object.read_json()
+    # create the bookmark object and load the bookmarks
+    bookmark_object = ManageBookmark(bookmark_name, str(bookmark_path))
+    bookmark_object.create_marlin_folder()
+    all_bookmarks = bookmark_object.list_bookmark()
+    bmk_exist = 'Bookmark alredy exist. Overwrite'
 
-    if name in all_bookmarks:
-        click.confirm('\n{}{} {}'.format(info, yellow(name), bookmark_exist
-                                         ), abort=True)
+    if bookmark_name in all_bookmarks:
+        click.confirm('\n{} {} {}?'.format(
+            label('info'),
+            bmk_exist,
+            color('yellow', bookmark_name)
+        ), abort=True)
+
     else:
-        click.confirm('\n{}Do you want to bookmark {}'.format(
-            info, yellow(name)), abort=True)
+        click.confirm('\n{} {} {}'.format(
+            label('info'),
+            'Do you want to bookmark',
+            color('yellow', bookmark_name)
+        ), abort=True)
 
-    # generate, update and store the new bookmark
-    new_bookmark = {name: str(path)}
-    all_bookmarks.update(new_bookmark)
-    bookmark_object.add_bookmark(all_bookmarks)
-
-    click.echo(good('{} has been Bookmarked\n'.format(yellow(name))))
-    make_batch()
+    # create new bookmark
+    bookmark_object.add_bookmark()
+    click.echo('{} {} {}'.format(
+        label('good'),
+        color('yellow', bookmark_name),
+        'has been Bookmarked.'
+    ))
 
 
 if __name__ == '__main__':
