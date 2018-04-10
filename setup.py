@@ -2,12 +2,8 @@
 from setuptools import setup, find_packages
 import os
 
-if os.name == 'posix':
-    pass
-else:
-    marlin = os.path.join(
-        os.path.dirname(__file__), 'marlin', 'scripts', 'marlin.bat')
-
+marlin = os.path.join(
+    os.path.dirname(__file__), 'marlin', 'scripts', 'marlin.bat')
 
 with open('README.md') as f:
     readme = f.read()
@@ -31,6 +27,7 @@ setup(
         'console_scripts': [
             'bookmark = marlin.bookmark:main',
             'rmark = marlin.rmark:main',
+            'marlin_help = marlin.marlin_help:main',
         ]
     },
     classifiers=[
