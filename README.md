@@ -6,7 +6,9 @@ Swim between bookmarks in the Terminal!
 
 ![marlin!](terminal.gif "marlin!")
 
-Born of pure envy! why windows users dont have aliases :angry: we too deserve to move fast in the terminal :triumph:
+Marlin is an easy to use bookmark manager for the terminal. Choose a folder, bookmark it and swim there whenever you want!
+
+Because we too deserve to move fast in the terminal :triumph:
 
 ## Usage
 
