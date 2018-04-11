@@ -35,4 +35,6 @@ def test_remove_bookmark():
     mock_object.remove_bookmark()
     bookmark = Path((marlin_path) / 'mock')
     exists = Path(bookmark).exists()
-    assert exists is False
+    # assert exists is False
+    if exists is not False:
+        raise AssertionError()
