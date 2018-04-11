@@ -4,20 +4,15 @@ import click
 
 commands = {
     'bookmark': '{} {} {}'.format(
-        label('good'),
-        'bookmark'.ljust(15),
-        'Bookmark current Folder'
+        label('good'), 'bookmark'.ljust(15), 'Bookmark current Folder'
     ),
     'rmark': '{} {} {}'.format(
-        label('bad'),
-        'rmark'.ljust(15),
-        'Remove a Bookmark'
+        label('bad'), 'rmark'.ljust(15), 'Remove a Bookmark'
     ),
     'marlin': '{} {} {}'.format(
         label('run'),
         'marlin'.ljust(15),
-        'Swim through the Terminal!\n'
-    )
+        'Swim through the Terminal!\n')
 }
 
 
