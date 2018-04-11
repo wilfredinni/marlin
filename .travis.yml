@@ -10,6 +10,7 @@ python:
 install: 
   - pip install -r test_requirements.txt
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Command to run tests, e.g. python setup.py test
 script: tox
 
@@ -17,6 +18,8 @@ script: tox
 >>>>>>> parent of 0cdde14... Travis
 # Command to run tests, e.g. python setup.py test
 script: tox
+=======
+>>>>>>> parent of b164c90... Travis
 
 # Command to run tests, e.g. python setup.py test
 before_script:
