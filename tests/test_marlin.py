@@ -9,7 +9,9 @@ mock_object = ManageBookmark('mock', 'mock_path', marlin_path)
 def test_create_marlin_folder():
     mock_object.create_marlin_folder()
     exists = Path(marlin_path).exists()
-    assert exists is True
+    # assert exists is True
+    if not exists:
+        raise AssertionError()
 
 
 def test_add_bookmark():
