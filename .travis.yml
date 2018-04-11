@@ -16,6 +16,9 @@ script: tox
 =======
 >>>>>>> parent of 0cdde14... Travis
 # Command to run tests, e.g. python setup.py test
+script: tox
+
+# Command to run tests, e.g. python setup.py test
 before_script:
   - "pip install ."
 
