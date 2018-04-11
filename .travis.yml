@@ -9,9 +9,12 @@ python:
 # Command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
 install: 
   - pip install -r test_requirements.txt
+<<<<<<< HEAD
 # Command to run tests, e.g. python setup.py test
 script: tox
 
+=======
+>>>>>>> parent of 0cdde14... Travis
 # Command to run tests, e.g. python setup.py test
 before_script:
   - "pip install ."
