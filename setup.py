@@ -19,7 +19,7 @@ setup(
     license='MIT License',
     packages=find_packages(exclude=('tests', 'docs')),
     include_package_data=True,
-    install_requires=['click'],
+    install_requires=['click', 'colorama'],
     python_requires='>=3',
     scripts=[marlin],
     entry_points={
