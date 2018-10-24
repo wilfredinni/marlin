@@ -27,7 +27,7 @@ Because we too deserve to move fast in the terminal :triumph:
 
     marlin
 
-## Swim
+### Swim!
 
     marlin [bookmark-name]
 
