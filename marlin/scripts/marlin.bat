@@ -11,7 +11,7 @@ if exist "%USERPROFILE%\.marlin\%bookmark_name%" (
     set /p bname=<"%USERPROFILE%\.marlin\%bookmark_name%"
     goto :CD
 ) else (
-    echo no existe el archivo %bookmark_name%
+    echo The file does not exists %bookmark_name%
     goto :END
 )
 :MDMARLIN
