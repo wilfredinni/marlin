@@ -11,7 +11,7 @@ with open('README.md') as f:
 setup(
     name='marlin-bookmark',
     version='0.1.0',
-    description='Swim between bookmarks in the Terminal ',
+    description='Swim between bookmarks in the terminal',
     long_description=readme,
     author='Carlos Montecinos Geisse',
     author_email='carlos.w.montecinos@gmail.com',

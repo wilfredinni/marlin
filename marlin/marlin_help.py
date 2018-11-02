@@ -4,15 +4,15 @@ import click
 
 commands = {
     'bookmark': '{} {} {}'.format(
-        label('good'), 'bookmark'.ljust(15), 'Bookmark current Folder'
+        label('good'), 'bookmark'.ljust(15), 'Bookmark current folder'
     ),
     'rmark': '{} {} {}'.format(
-        label('bad'), 'rmark'.ljust(15), 'Remove a Bookmark'
+        label('bad'), 'rmark'.ljust(15), 'Remove a bookmark'
     ),
     'marlin': '{} {} {}'.format(
         label('run'),
         'marlin'.ljust(15),
-        'Swim through the Terminal!\n')
+        'Swim through the terminal!\n')
 }
 
 
@@ -28,7 +28,7 @@ def main():
 def list_bookmarks():
     bookmark_object = ManageBookmark('mock', 'mock')
     all_bookmarks = bookmark_object.list_bookmark()
-    click.echo('Saved Bookmarks:')
+    click.echo('Saved bookmarks:')
     for bookmark in all_bookmarks:
         bookmark_path = bookmark_object.read_bookmark(bookmark)
         click.echo('{} {} {}'.format(

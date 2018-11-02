@@ -8,7 +8,7 @@ import sys
 @click.argument('bookmark_name')
 def main(bookmark_name):
     """
-    Remove a Bookmark.
+    Remove a bookmark.
     """
     # create the bookmark instance and load all the bookmarks
     bookmark_object = ManageBookmark(bookmark_name, 'mock_path')
