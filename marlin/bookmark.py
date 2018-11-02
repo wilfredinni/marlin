@@ -7,6 +7,8 @@ import click
 @click.command()
 @click.argument('bookmark_name')
 @click.argument('bookmark_path', default=Path.cwd())
+
+
 def main(bookmark_name, bookmark_path):
     """
     Bookmark the current folder.
@@ -27,7 +29,7 @@ def main(bookmark_name, bookmark_path):
 
 
 def exist_msg(bookmark_name):
-    bmk_exist = 'Bookmark alredy exist. Overwrite'
+    bmk_exist = 'Bookmark already exists. Overwrite'
     return '\n{} {} {}?'.format(
         label('info'),
         bmk_exist,
@@ -47,7 +49,7 @@ def bookmarked_msg(bookmark_name):
     return '{} {} {}'.format(
         label('good'),
         color('yellow', bookmark_name),
-        'has been Bookmarked.'
+        'has been bookmarked.'
     )
 
 
