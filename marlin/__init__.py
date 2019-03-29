@@ -1,6 +1,6 @@
 __title__ = "marlin"
 __license__ = "MIT"
-__version__ = "0.1.1"
+__version__ = "0.1.2"
 __author__ = "Carlos Montecinos Geisse"
 __contact__ = "carlos.w.montecinos@gmail.com"
 __url__ = "https://github.com/wilfredinni/marlin"
