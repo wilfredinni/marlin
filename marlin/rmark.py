@@ -26,21 +26,18 @@ def main(bookmark_name):
 
 
 def msg_delete(bookmark_name):
-    return "\n{} {} {}".format(
-        label("info"), "Do you want to delete", color("yellow", bookmark_name)
-    )
+    msg = "Do you want to delete"
+    return f"\n{label('info')} {msg} {color('yellow', bookmark_name)}"
 
 
 def msg_not_exist(bookmark_name):
-    return "\n{} {} {}".format(
-        label("bad"), color("yellow", bookmark_name), "does not exist."
-    )
+    msg = "does not exist."
+    return f"\n{label('bad')} {color('yellow', bookmark_name)} {msg}"
 
 
 def msg_deleted(bookmark_name):
-    return "{} {} {}".format(
-        label("bad"), color("yellow", bookmark_name), "has been deleted."
-    )
+    msg = "has been deleted."
+    return f"{label('bad')} {color('yellow', bookmark_name)} {msg}"
 
 
 if __name__ == "__main__":

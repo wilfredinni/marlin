@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "marlin"
-version = "0.1.0"
+version = "0.1.1"
 description = "Swim between bookmarks in the termina"
 authors = ["'Carlos <'carlos.w.montecinos@gmail.com'>"]
 license = "MIT"

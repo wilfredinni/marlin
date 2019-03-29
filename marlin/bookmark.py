@@ -27,22 +27,18 @@ def main(bookmark_name, bookmark_path):
 
 
 def exist_msg(bookmark_name):
-    bmk_exist = "Bookmark already exists. Overwrite"
-    return "\n{} {} {}?".format(
-        label("info"), bmk_exist, color("yellow", bookmark_name)
-    )
+    msg = "Bookmark already exists. Overwrite"
+    return f"\n{label('info')} {msg} {color('yellow', bookmark_name)}?"
 
 
 def bookmark_msg(bookmark_name):
-    return "\n{} {} {}".format(
-        label("info"), "Do you want to bookmark", color("yellow", bookmark_name)
-    )
+    msg = "Do you want to bookmark"
+    return f"\n{label('info')} {msg} {color('yellow', bookmark_name)}"
 
 
 def bookmarked_msg(bookmark_name):
-    return "{} {} {}".format(
-        label("good"), color("yellow", bookmark_name), "has been bookmarked."
-    )
+    msg = "has been bookmarked."
+    return f"{label('good')} {color('yellow', bookmark_name)} {msg}"
 
 
 if __name__ == "__main__":

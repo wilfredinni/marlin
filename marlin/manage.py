@@ -3,13 +3,10 @@ from pathlib import Path
 
 
 class ManageBookmark:
-
-    marlin_path = Path((Path.home()) / ".marlin")
-
-    def __init__(self, bookmark_name, bookmark_path, m_path=marlin_path):
+    def __init__(self, bookmark_name, bookmark_path):
         self.bookmark_name = bookmark_name
         self.bookmark_path = bookmark_path
-        self.m_path = m_path
+        self.m_path = Path((Path.home()) / ".marlin")
 
     def add_bookmark(self):
         os.chdir(self.m_path)
