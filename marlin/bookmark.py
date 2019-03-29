@@ -5,10 +5,8 @@ import click
 
 
 @click.command()
-@click.argument('bookmark_name')
-@click.argument('bookmark_path', default=Path.cwd())
-
-
+@click.argument("bookmark_name")
+@click.argument("bookmark_path", default=Path.cwd())
 def main(bookmark_name, bookmark_path):
     """
     Bookmark the current folder.
@@ -29,29 +27,23 @@ def main(bookmark_name, bookmark_path):
 
 
 def exist_msg(bookmark_name):
-    bmk_exist = 'Bookmark already exists. Overwrite'
-    return '\n{} {} {}?'.format(
-        label('info'),
-        bmk_exist,
-        color('yellow', bookmark_name)
+    bmk_exist = "Bookmark already exists. Overwrite"
+    return "\n{} {} {}?".format(
+        label("info"), bmk_exist, color("yellow", bookmark_name)
     )
 
 
 def bookmark_msg(bookmark_name):
-    return '\n{} {} {}'.format(
-        label('info'),
-        'Do you want to bookmark',
-        color('yellow', bookmark_name)
+    return "\n{} {} {}".format(
+        label("info"), "Do you want to bookmark", color("yellow", bookmark_name)
     )
 
 
 def bookmarked_msg(bookmark_name):
-    return '{} {} {}'.format(
-        label('good'),
-        color('yellow', bookmark_name),
-        'has been bookmarked.'
+    return "{} {} {}".format(
+        label("good"), color("yellow", bookmark_name), "has been bookmarked."
     )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

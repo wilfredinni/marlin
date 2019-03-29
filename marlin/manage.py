@@ -4,7 +4,7 @@ from pathlib import Path
 
 class ManageBookmark:
 
-    marlin_path = Path((Path.home()) / '.marlin')
+    marlin_path = Path((Path.home()) / ".marlin")
 
     def __init__(self, bookmark_name, bookmark_path, m_path=marlin_path):
         self.bookmark_name = bookmark_name
@@ -13,7 +13,7 @@ class ManageBookmark:
 
     def add_bookmark(self):
         os.chdir(self.m_path)
-        with open(self.bookmark_name, 'w') as f:
+        with open(self.bookmark_name, "w") as f:
             f.write(self.bookmark_path)
 
     def remove_bookmark(self):
@@ -25,7 +25,7 @@ class ManageBookmark:
 
     def read_bookmark(self, bookmark):
         os.chdir(self.m_path)
-        with open(bookmark, 'r') as f:
+        with open(bookmark, "r") as f:
             return f.read()
 
     def create_marlin_folder(self):
