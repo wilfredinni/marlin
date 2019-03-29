@@ -2,7 +2,7 @@
 name = "marlin"
 version = "0.1.2"
 description = "Swim between bookmarks in the termina"
-authors = ["'Carlos <'carlos.w.montecinos@gmail.com'>"]
+authors = ["Carlos <carlos.w.montecinos@gmail.com>"]
 license = "MIT"
 
 [tool.poetry.dependencies]

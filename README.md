@@ -7,11 +7,8 @@ Swim between bookmarks in the terminal!
 ![marlin!](terminal.gif "marlin!")
 
 Marlin is an easy to use bookmark manager for the terminal. Choose a folder, bookmark it and swim there whenever you want!
-Because we too deserve to move fast in the terminal :triumph:!
 
 ## Usage
-
-### Install
 
     pip install marlin-bookmark
 
