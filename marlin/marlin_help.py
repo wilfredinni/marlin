@@ -4,13 +4,13 @@ import click
 
 
 bookmark_msg = "Bookmark current folder"
-rmark_msg = "Remove a bookmar"
-marlin_msg = "Swim through the terminal!\n"
+rmark_msg = "Remove a bookmark"
+marlin_msg = "Swim through the terminal!"
 
 commands = {
     "bookmark": f"{label('good')} {'bookmark'.ljust(15)} {bookmark_msg}",
     "rmark": f"{label('bad')} {'rmark'.ljust(15)} {rmark_msg}",
-    "marlin": f"{label('run')} {'marlin'.ljust(15)} {marlin_msg}",
+    "marlin": f"{label('run')} {'marlin'.ljust(15)} {marlin_msg}\n",
 }
 
 
