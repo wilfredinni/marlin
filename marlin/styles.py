@@ -6,7 +6,7 @@ init(autoreset=True)
 
 def label(label):
     labels = {
-        "info": Fore.YELLOW + Style.BRIGHT + "[d]" + Style.RESET_ALL,
+        "info": Fore.YELLOW + Style.BRIGHT + "[!]" + Style.RESET_ALL,
         "bad": Fore.RED + Style.BRIGHT + "[-]" + Style.RESET_ALL,
         "good": Fore.GREEN + Style.BRIGHT + "[+]" + Style.RESET_ALL,
         "run": Fore.WHITE + Style.BRIGHT + "[~]" + Style.RESET_ALL,
