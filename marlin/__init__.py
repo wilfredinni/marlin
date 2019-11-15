@@ -1,6 +1,6 @@
 __title__ = "marlin"
 __license__ = "MIT"
-__version__ = "0.1.2"
+__version__ = "0.1.4"
 __author__ = "Carlos Montecinos Geisse"
 __contact__ = "carlos@pythoncheatsheet.org"
 __url__ = "https://github.com/wilfredinni/marlin"
