@@ -11,7 +11,7 @@ click = "^7.0"
 colorama = "^0.4.1"
 
 [tool.poetry.dev-dependencies]
-black = { version = "*", allows-prereleases = true }
+black = { version = "*", allow-prereleases = true }
 pytest = "^4.3"
 flake8 = "^3.7"
 
