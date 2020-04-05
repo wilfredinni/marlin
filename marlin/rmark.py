@@ -27,7 +27,7 @@ def main(bookmark_name):
 
 def msg_delete(bookmark_name):
     msg = "Do you want to delete"
-    return f"\n{label('info')} {msg} {color('yellow', bookmark_name)}"
+    return f"\n{label('info')} {msg} {color('yellow', bookmark_name)}?"
 
 
 def msg_not_exist(bookmark_name):

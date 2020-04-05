@@ -1,4 +1,6 @@
 @echo off
+@chcp 65001 >NUL
+
 set bookmark_name=%1
 
 if not exist "%USERPROFILE%\.marlin" (
@@ -14,6 +16,7 @@ if exist "%USERPROFILE%\.marlin\%bookmark_name%" (
     echo Bookmark does not exists: %bookmark_name%
     goto :END
 )
+
 :MDMARLIN
 md %USERPROFILE%\.marlin
 goto :HELP
