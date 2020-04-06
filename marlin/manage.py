@@ -12,7 +12,7 @@ class ManageBookmark:
 
     def add_bookmark(self):
         os.chdir(self.m_path)
-        with open(self.bookmark_name, "w") as f:
+        with open(self.bookmark_name, "w", encoding="utf-8") as f:
             f.write(self.bookmark_path)
 
     def remove_bookmark(self):
@@ -24,7 +24,7 @@ class ManageBookmark:
 
     def read_bookmark(self, bookmark):
         os.chdir(self.m_path)
-        with open(bookmark, "r") as f:
+        with open(bookmark, "r", encoding="utf-8") as f:
             return f.read()
 
     def create_marlin_folder(self):
