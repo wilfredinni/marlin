@@ -19,6 +19,7 @@ setup(
     version=version,
     description="Swim between bookmarks in the terminal",
     long_description=readme,
+    long_description_content_type='text/markdown',
     author="Carlos Montecinos Geisse",
     author_email="carlos.w.montecinos@gmail.com",
     url="https://github.com/wilfredinni/marlin",
