@@ -32,6 +32,7 @@ def test_list_bookmark():
 
 
 def test_remove_bookmark():
+    mock_object.add_bookmark()
     mock_object.remove_bookmark()
     bookmark = Path((marlin_path) / 'mock')
     exists = Path(bookmark).exists()
